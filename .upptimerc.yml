@@ -1,8 +1,8 @@
 # Resimay Status — public uptime monitor
 # Powered by Upptime (https://upptime.js.org). No servers, runs on GitHub Actions.
-# Source: AJ-4UIT/resimay-status. Status page lives at https://status.resimay.ai
+# Source: Resi-may/resimay-status (transferred from AJ-4UIT on 2026-05-02). Status page lives at https://status.resimay.ai
 
-owner: AJ-4UIT
+owner: Resi-may
 repo: resimay-status
 
 # Monitored endpoints. Designed to NOT trigger Vercel Bot Protection challenges
