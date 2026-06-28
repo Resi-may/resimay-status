@@ -24,6 +24,11 @@ sites:
 status-website:
   cname: status.resimay.ai
   name: Resimay Status
+  # Resimay brand: light base + the gradient mark for logo/favicon.
+  theme: light
+  logoUrl: https://resimay.ai/brand/png/mark/mark-gradient-256.png
+  favicon: https://resimay.ai/brand/png/mark/mark-gradient-128.png
+  faviconSvg: https://resimay.ai/brand/svg/mark.svg
   introTitle: "Live status of **Resimay** services."
   introMessage: |
     Real-time monitoring of resimay.ai and the API. Checks run every 5 minutes from GitHub Actions.
@@ -35,6 +40,31 @@ status-website:
       href: https://resimay.ai
     - title: Contact
       href: https://resimay.ai/contact
+  # Repaint the Upptime template in the Resimay design system: Paper background,
+  # Ink text, Cobalt accents, and the brand fonts (Bricolage Grotesque display,
+  # Schibsted Grotesk body, Space Mono labels). Overrides the documented theme
+  # CSS variables + a few safe element selectors.
+  css: |
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Schibsted+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+    :root {
+      --body-background-color: #F4F2EA;
+      --body-text-color: #15161B;
+      --card-background-color: #FFFFFF;
+      --nav-background-color: #F4F2EA;
+      --nav-border-bottom-color: #E7E2D2;
+    }
+    body {
+      background: #F4F2EA !important;
+      color: #15161B !important;
+      font-family: 'Schibsted Grotesk', system-ui, -apple-system, sans-serif !important;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Bricolage Grotesque', 'Schibsted Grotesk', sans-serif !important;
+      letter-spacing: -0.02em;
+    }
+    a { color: #2B45E8; }
+    a:hover { color: #1F34C0; }
+    code, time, .timestamp { font-family: 'Space Mono', monospace !important; }
 
 # Notifications:
 #   To get email/Slack alerts on incidents, add NOTIFICATION_* secrets to the
