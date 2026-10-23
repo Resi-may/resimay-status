@@ -22,17 +22,17 @@
     "url": "https://api.resimay.ai/health",
     "icon": "https://icons.duckduckgo.com/ip3/api.resimay.ai.ico",
     "slug": "resimay-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 647,
-    "timeDay": 1089,
-    "timeWeek": 835,
-    "timeMonth": 741,
-    "timeYear": 647,
+    "time": 849,
+    "timeDay": 8123,
+    "timeWeek": 2881,
+    "timeMonth": 2543,
+    "timeYear": 849,
     "dailyMinutesDown": {}
   }
 ]
